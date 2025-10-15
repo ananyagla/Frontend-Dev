@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Course Registration Form</title>
+</head>
+<body>
+  <h1>Course Registration</h1>
+
+  <form>
+    <fieldset>
+      <legend>Student Information</legend>
+      Name: <input type="text" name="name"><br><br>
+      Email: <input type="email" name="email"><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Details</legend>
+      Select Course:
+      <select name="course">
+        <option>--Select--</option>
+        <option>HTML Basics</option>
+        <option>Java Programming</option>
+        <option>Python for Beginners</option>
+        <option>Cloud Computing</option>
+      </select><br><br>
+    </fieldset>
+
+    <input type="submit" value="Register">
+  </form>
+
+  <h2>Available Course Schedules</h2>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <th>Day</th>
+      <th>Time</th>
+      <th>Instructor</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td>10 AM - 12 PM</td>
+      <td>Mr. Sameer Katta</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>2 PM - 4 PM</td>
+      <td>Mr. Tanmay</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>5 PM - 7 PM</td>
+      <td>Mr. Arjun</td>
+    </tr>
+  </table>
+
+  <footer>
+    <p>&copy; 2025 Learnfully</p>
+  </footer>
+</body>
+</html>
