@@ -76,14 +76,4 @@ footer {
     color: #fff;
 }
 
-/* Responsive: single column for screens < 600px */
-@media (max-width: 600px) {
-    .team-container {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .team-card {
-        max-width: 90%;
-    }
-}

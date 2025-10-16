@@ -68,9 +68,4 @@ header h1 {
     opacity: 1;
 }
 
-/* Responsive spacing */
-@media(max-width: 600px) {
-    .gallery {
-        gap: 1rem;
-    }
-}
+

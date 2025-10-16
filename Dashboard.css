@@ -83,21 +83,5 @@ header {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Responsive: stack sidebar above content on small screens */
-@media(max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
 
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin-bottom: 1rem;
-        top: 0;
-    }
 
-    .main-content {
-        margin-left: 0;
-    }
-}
