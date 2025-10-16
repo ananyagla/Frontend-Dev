@@ -19,8 +19,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #bd6196; /* custom dark blue */
-    color: #fff;
+    background-color: #971b66; /* custom dark blue */
+    color: #000000c2;
     padding: 1rem 0; /* rem unit */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 1000;
@@ -55,7 +55,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #facc15; /* golden hover effect */
+    color: #f5f2f3; /* golden hover effect */
 }
 
 /* Main Section */
