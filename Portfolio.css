@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Pacifico, cursive;
+    line-height: 1.6;
+    background-color: #f0f4f8; /* light background */
+    color: #333; /* text color for contrast */
+}
+
+/* Header Styling */
+header {
+    position: fixed; /* stays at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #bd6196; /* custom dark blue */
+    color: #fff;
+    padding: 1rem 0; /* rem unit */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+header .container {
+    width: 90%; /* percentage unit */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8em; /* em unit */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 2rem; /* rem unit */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #facc15; /* golden hover effect */
+}
+
+/* Main Section */
+main {
+    padding-top: 120px; /* space for fixed header in px */
+    min-height: 80vh; /* vh unit */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio {
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.bio img {
+    width: 150px; /* px unit */
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.bio p {
+    font-size: 1rem; /* rem unit */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #b3619a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
