@@ -78,15 +78,4 @@ footer {
     width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 800px) {
-    main {
-        flex-direction: column;
-        gap: 30px;
-    }
 
-    .box {
-        width: 80%;
-        height: auto;
-    }
-}

@@ -86,18 +86,4 @@ footer {
   border-radius: 10px;
 }
 
-/* Responsive Layout (Below 800px) */
-@media (max-width: 800px) {
-  .container {
-    grid-template-areas: 
-      "header"
-      "main"
-      "sidebar"
-      "footer";
-    grid-template-columns: 1fr;
-  }
 
-  main {
-    grid-template-columns: 1fr;
-  }
-}
