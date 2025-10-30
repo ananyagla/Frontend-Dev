@@ -34,25 +34,6 @@ main p {
     font-size: 1.1px;
 }
 
-/* First letter styling */
-main p::first-letter {
-    font-size: 2px;
-    font-weight: bold;
-    float: left;
-    margin-right: 0.3px;
-    line-height: 1;
-}
-
-/* First line styling */
-main p::first-line {
-    font-weight: bold;
-}
-
-/* Highlight keywords */
-mark {
-    background-color: #ffeb3b;
-    padding: 0 0.2px;
-}
 
 /* Blockquote styling */
 blockquote {
