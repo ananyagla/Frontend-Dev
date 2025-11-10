@@ -1,0 +1,83 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  background-color: #c50d63;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+/* Gallery Grid Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Image and Caption Container */
+figure {
+  margin: 0;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(156, 57, 57, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+figure:hover {
+  transform: scale(1.03);
+}
+
+/* Image Styling */
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: filter 0.5s ease;
+}
+
+/* Different Filter Effects */
+figure:nth-child(1) img { filter: blur(3px); }
+figure:nth-child(2) img { filter: grayscale(100%); }
+figure:nth-child(3) img { filter: sepia(80%); }
+figure:nth-child(4) img { filter: brightness(0.7); }
+figure:nth-child(5) img { filter: contrast(150%); }
+figure:nth-child(6) img { filter: hue-rotate(90deg); }
+
+/* Hover removes the filter */
+figure:hover img {
+  filter: none;
+}
+
+/* Caption Styling */
+figcaption {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  border-top: 1px solid #eee;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ee0eab;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Responsive behavior below 600px */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

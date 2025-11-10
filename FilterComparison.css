@@ -1,0 +1,61 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+header, footer {
+  margin-bottom: 20px;
+}
+
+/* Container for Images */
+.comparison-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Image Boxes */
+.image-box {
+  flex: 1 1 300px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: filter 0.5s ease;
+}
+
+/* Filter Effect */
+.filtered img {
+  filter: brightness(0.5);
+}
+
+/* Hover Effect — remove filter */
+.filtered img:hover {
+  filter: none;
+}
+
+/* Captions */
+figcaption {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .comparison-container {
+    flex-direction: column;
+  }
+}

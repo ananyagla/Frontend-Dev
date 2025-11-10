@@ -1,0 +1,58 @@
+/* Basic Setup */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  animation: fadeIn 1s ease-in;
+  flex-wrap: wrap;
+}
+
+/* Individual Cards */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Image Filter */
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card:hover img {
+  filter: none;
+}
+
+/* Responsive: stack vertically below 800px */
+@media (max-width: 800px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
