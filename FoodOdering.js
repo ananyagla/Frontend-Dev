@@ -25,7 +25,7 @@ try {
 }
 
 try {
-    const total2 = calculateBill(["pizza", "icecream"]); // invalid item
+    const total2 = calculateBill(["pizza", "icecream"]); 
     console.log("Total Bill:", total2);
 } catch (err) {
     console.log("Error:", err.message);
